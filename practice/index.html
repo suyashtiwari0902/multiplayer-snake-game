@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #gameScreen {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="heading">
+            SNAKES GAME
+        </div>
+        <div id="workingArea">
+            <button
+            id="newGameButton"
+            >Start New
+            </button>
+            <div id="join">
+                <input type="text" placeholder="Enter Game Code" id="gameCodeInput"/>
+                <button
+                id="joinGameButton"
+                type="submit"
+                > Join Existing game
+                </button>
+            </div>
+        </div>
+            <div id="gameScreen" class="h-100">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        
+                  <h1>Your game code is: <span id="gameCodeDisplay"></span></h1>
+        
+                  <canvas id="canvas"></canvas>
+                <!-- </div> -->
+              </div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
