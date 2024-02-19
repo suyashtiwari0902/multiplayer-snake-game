@@ -1,6 +1,6 @@
 const io = require('socket.io')({
     cors: {
-        origin: 'http://127.0.0.1:5500',
+        origin: 'https://65d38298065120032899ebd7--verdant-selkie-7dcbf7.netlify.app/',
         methods: ['GET', 'POST'],
         credentials: true
     }
