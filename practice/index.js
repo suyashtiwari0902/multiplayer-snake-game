@@ -2,7 +2,7 @@ const BG_COLOUR = '#231f20';
 const SNAKE_COLOUR = '#a3b6f9';
 const FOOD_COLOUR = '#e66916';
 
-const socket = io('http://localhost:3000');
+const socket = io('https://two-player-snake-game.onrender.com');
 socket.on('init', handleInit);
 socket.on('gameState', handleGameState);
 socket.on('gameOver', handleGameOver);
@@ -69,7 +69,7 @@ function paintGame(state) {
     // paintPlayer(state.player, size, SNAKE_COLOUR);
     // console.log(state.players[0].snake[0]);
     paintPlayer(state.players[0], size, SNAKE_COLOUR);
-    paintPlayer(state.players[1], size, SNAKE_COLOUR);
+    paintPlayer(state.players[1], size, 'red');
 }
 
 function paintPlayer(player, size, colour) {
